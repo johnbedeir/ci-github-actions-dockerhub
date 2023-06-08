@@ -23,7 +23,7 @@ jobs:
       - name: Build and push Docker image
         # uses: docker/build-push-action@v2
         env:
-          REPOSITORY: nginx
+          REPOSITORY: triple3a/nginx
           IMAGE_TAG: latest
         run: |
           docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/$REPOSITORY:$IMAGE_TAG .
